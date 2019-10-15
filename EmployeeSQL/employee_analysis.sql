@@ -12,14 +12,13 @@ salaries.Emp_no = employees.Emp_no;
 --2. List employees who were hired in 1986.
 SELECT First_name, Last_name
 FROM employees
-WHERE Hire_date BETWEEN $1986-01-01 AND $1986-12-31;
+WHERE Hire_date BETWEEN '1986-01-01' AND '1986-12-31';
 
 --3. List the manager of each department with the following information: 
 --department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
-
+SELECT dept_manager.Dept_no, departments.Dept_name
 
 --4. List the department of each employee with the following information: employee number, last name, first name, and department name.
-
 
 
 --5. List all employees whose first name is "Hercules" and last names begin with "B."
